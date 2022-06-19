@@ -135,9 +135,9 @@ int main(){
             a_tf(1,i) = a_tf(1,i) + a_t(1,i-size/2 + j );
             a_tf(2,i) = a_tf(2,i) + a_t(2,i-size/2 + j );        
         }
-        a_tf(0,i) = a_tf(0,i)/size;
-        a_tf(1,i) = a_tf(1,i)/size;
-        a_tf(2,i) = a_tf(2,i)/size;
+        a_tf(0,i) = a_tf(0,i)/(size+1);
+        a_tf(1,i) = a_tf(1,i)/(size+1);
+        a_tf(2,i) = a_tf(2,i)/(size+1);
     }
 
     cout <<"이후 값 s_t" << endl;
